@@ -46,14 +46,12 @@ Return only the customers whose lASt name begins with letters FROM M to Z.
 NOTE: When comparing strings of characters, ‘M’ comes before any string of characters that begins with ‘M’. 
 For example, ‘M’ comes before ‘Mulligan’.
 */
+-- return m to z  (pending)
 
-SELECT CONCAT ( lASt_name, ", " , first_name ) AS full_name 
+SELECT CONCAT ( last_name, ", " , first_name ) AS full_name 
 FROM customers
-ORDER BY lASt_name ASC;
+ORDER BY last_name ASC;
 
-/* NEED TO CHECK: (For the code above) When comparing strings of characters, ‘M’ comes before any string of characters that begins with ‘M’. 
-For example, ‘M’ comes before ‘Mulligan’." 
-*/
 
 /*
 3. 
