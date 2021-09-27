@@ -1,3 +1,7 @@
+/*
+GitHub Code - Group 5
+*/
+
 -- Viewing the data FROM products and categories
 SELECT * FROM products;
 SELECT * FROM categories;
@@ -170,6 +174,7 @@ total The price plus the tax
 To calculate the fourth column, add the expressions you used for the first and third columns.
 */
 
-SELECT @SomeVar = 1234, @AnotherVar = 'Foo';
-SELECT @price = 200, @tax = 0.07;
-select @msg = 'msg', @data = 'data';
+
+SELECT 100 AS 'price', .07 AS 'tax_rate',  
+100 * .07 AS 'tax_amount', 
+100 + (100 * .07) AS 'total';
